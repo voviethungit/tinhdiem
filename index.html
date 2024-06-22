@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Điểm Tốt Nghiệp THPT</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br/>
+    <div class="container mt-10">
+        <div id="countdown" class="mt-4">
+            <h2 class="text-center">Đếm Ngược Đến Ngày Thi</h2>
+            <p id="timer" class="text-center"></p>
+        </div>
+        <hr>
+        <h1 class="text-center">Tính Điểm Tốt Nghiệp THPT</h1>
+        <p style="text-align: center; color: red;">Chúc các em thi tốt !!!</p>
+        <form id="scoreForm" class="mt-4">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="exam1">Điểm Toán:</label>
+                    <input type="number" class="form-control" id="exam1" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exam2">Điểm Văn:</label>
+                    <input type="number" class="form-control" id="exam2" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="exam3">Điểm Anh Văn:</label>
+                    <input type="number" class="form-control" id="exam3" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exam4">Điểm Tổng Tổ Hợp:</label>
+                    <input type="number" class="form-control" id="exam4" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="encouragement">Điểm khuyến khích (nếu có):</label>
+                    <input type="number" class="form-control" id="encouragement">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="average12">Điểm trung bình cả năm lớp 12:</label>
+                    <input type="number" class="form-control" id="average12" required step="0.01">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="priority">Điểm ưu tiên (nếu có):</label>
+                    <input type="number" class="form-control" id="priority">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="calculateScore()">Tính Toán</button>
+        </form>
+        <h2 class="text-center mt-4">Kết Quả: <span id="result"></span></h2>
+        <a href="https://www.facebook.com/VoVietHung.IT" style="text-decoration: none; text-align: center;">Copyright BenofVi</a>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
